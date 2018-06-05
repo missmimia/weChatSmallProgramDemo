@@ -1,0 +1,9 @@
+<!--list.wxml-->
+<view class='date-item' wx:for="{{future}}" wx:key='*this'>
+  <view class='date-wrapper'>
+    <text class='day'>{{item.day}}</text>
+    <text class='date'>{{item.date}}</text>
+  </view>
+  <view class='temp'>{{item.minTemp}}°-{{item.maxTemp}}°</view>
+  <image src="{{item.iconPath}}" class='weather-icon'></image>
+</view>
